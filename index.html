@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Git Good</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
   <script type="text/javascript" src="index.js" defer></script>
 </head>
@@ -60,8 +61,6 @@
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="col-6">
         <h3>What do I need to git started?</h3>
         <ol>
           <li>A Computer (Mac, Windows, Linux)</li>
@@ -70,29 +69,52 @@
           <li>A <a href="https://github.com/join" target="_blank">GitHub Account <i class="fas fa-external-link-alt"></i></a></li>
           <li>A fork of <a href="https://github.com/rmlamarche/git-good" target="_blank">https://github.com/rmlamarche/git-good <i class="fas fa-external-link-alt"></i></a></li>
         </ol>
+      </div>
+      <div class="col-6">
         <h3>Terminology</h3>
         <dl>
           <dt>repository</dt>
-          <dd>words</dd>
-          <dt>branch</dt>
-          <dd>words</dd>
+          <dd>the folder with all of the code in it (on GitHub, on your laptop, on a server, etc.)</dd>
+          <dt>fork</dt>
+          <dd>this repository is cool, I want to make my own copy of it</dd>
           <dt>clone</dt>
-          <dd>words</dd>
+          <dd>copy the repository from GitHub to my computer</dd>
           <dt>commit</dt>
-          <dd>words</dd>
+          <dd>tell git that you care about these changes and you want them</dd>
+          <dt>branch</dt>
+          <dd>"pointer" to a commit</dd>
           <dt>push</dt>
-          <dd>words</dd>
+          <dd>upload your version of the code (your commit), and update the repository on GitHub</dd>
+          <dt>fetch</dt>
+          <dd>say "hey GitHub, is my code on my computer different from yours?"</dd>
           <dt>pull</dt>
-          <dd>words</dd>
+          <dd>say "hey GitHub, my copy of the code on my computer is old, can I have your copy? Thanks 😊"</dd>
           <dt>revert</dt>
-          <dd>words</dd>
+          <dd>time travel – say "hey GitHub, can you go back in time for me?"</dd>
         </dl>
       </div>
     </div>
   </section>
   <section id="exercise" class="bg-2 container">
     <div class="content-container">
-      <h2>Exercise</h2>
+      <div class="col-12">
+        <h2>Exercise</h2>
+      </div>
+      <div class="col-6">
+        <h3>Cloning the Repository</h3>
+        <code class="code-inline code-bash">git clone https://github.com/rmlamarche/git-good.git</code>
+        <img src="images/1.jpg" alt="GitHub Desktop - git clone" width="100%" height="auto">
+        <h3>Making Changes</h3>
+        <code class="code-inline code-bash">echo "my name is <span class="code-variable">your_name</span>" >> README.txt</code>
+        <img src="images/2.jpg" alt="Make changes" width="100%" height="auto">
+      </div>
+      <div class="col-6">
+        <h3>"Saving" your changes</h3>
+        <code class="code-inline code-bash">git commit -m "<span class="code-variable">commit_message</span>"</code>
+        <img src="images/3.jpg" alt="GitHub Desktop - git commit" width="100%" height="auto">
+        <code class="code-inline code-bash">git push origin master</code>
+        <img src="images/4.jpg" alt="GitHub Desktop - git push" width="100%" height="auto">
+      </div>
     </div>
   </section>
   <section id="far-far-away" class="bg-3 container">
