@@ -99,21 +99,31 @@
     <div class="content-container">
       <div class="col-12">
         <h2>Exercise</h2>
-      </div>
-      <div class="col-6">
         <h3>1. Cloning the Repository</h3>
-        <code class="code-inline code-bash">git clone https://github.com/rmlamarche/git-good.git</code>
-        <img src="images/1.jpg" alt="GitHub Desktop - git clone" width="100%" height="auto" style="margin-bottom:1em;">
+        <div>
+          <code class="code-inline code-bash">git clone https://github.com/rmlamarche/git-good.git</code>
+        </div>
+        <img src="images/1.jpg" alt="GitHub Desktop - git clone" width="80%" height="auto" style="margin-bottom:1em;">
         <h3>2. Making Changes</h3>
-        <code class="code-inline code-bash">echo "my name is <span class="code-variable">your_name</span>" >> README.txt</code>
-        <img src="images/2.jpg" alt="Make changes" width="100%" height="auto" style="margin-bottom:1em;">
-      </div>
-      <div class="col-6">
+        <div>
+          <code class="code-inline code-bash">echo "my name is <span class="code-variable">your_name</span>" >> README.txt</code>
+        </div>
+        <img src="images/2.jpg" alt="Make changes" width="80%" height="auto" style="margin-bottom:1em;">
         <h3>3. "Saving" your changes</h3>
-        <code class="code-inline code-bash">git commit -m "<span class="code-variable">commit_message</span>"</code>
-        <img src="images/3.jpg" alt="GitHub Desktop - git commit" width="100%" height="auto" style="margin-bottom:1em;">
-        <code class="code-inline code-bash">git push origin master</code>
-        <img src="images/4.jpg" alt="GitHub Desktop - git push" width="100%" height="auto" style="margin-bottom:1em;">
+        <div>
+          <code class="code-inline code-bash">git commit -m "<span class="code-variable">commit_message</span>"</code>
+        </div>
+        <img src="images/3.jpg" alt="GitHub Desktop - git commit" width="80%" height="auto" style="margin-bottom:1em;">
+        <div>
+          <code class="code-inline code-bash">git push origin master</code>
+        </div>
+        <img src="images/4.jpg" alt="GitHub Desktop - git push" width="80%" height="auto" style="margin-bottom:1em;">
+        <h3>4. Whoops</h3>
+        <div>
+          <p>You didn't mean to make those changes. Let's undo that!</p>
+          <code class="code-inline code-bash">git revert HEAD~</code>
+        </div>
+        <img src="images/5.jpg" alt="GitHub Desktop - git push" width="80%" height="auto" style="margin-bottom:1em;">
       </div>
     </div>
   </section>
