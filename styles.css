@@ -69,6 +69,24 @@ nav > ul > li > a:hover {
   background: var(--color-light-gray);
 }
 
+dl > dt {
+  font-weight: 600;
+  transition: all .5s ease-in-out;
+}
+dl > dt::before {
+  content: '🟊';
+  color: var(--color-1);
+  opacity: .5;
+  transition: opacity .5s ease-in-out;
+}
+dl > dt:hover {
+  background: var(--color-5-light);
+}
+dl > dt:hover::before {
+  opacity: 1;
+}
+
+/* Layout */
 section.container {
   display: block;
   position:relative;
@@ -91,7 +109,19 @@ section.container {
 }
 
 div.content-container {
-  padding: 2em 0;
+  padding: 2em 0 4em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.content-container > div {
+  margin: 0 1em;
+  padding: 0 1em;
+}
+div.col-6 {
+  width: calc(50% - 4em);
+}
+div.col-12 {
+  width: calc(100% - 4em);
 }
 
 /* Components */
