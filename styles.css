@@ -133,9 +133,6 @@ div.content-container > div {
   margin: 0 1em;
   padding: 0 1em;
 }
-div.col-6 {
-  width: calc(50% - 4em);
-}
 div.col-12 {
   width: calc(100% - 4em);
 }
@@ -171,6 +168,27 @@ code span.code-variable {
   color: var(--color-5);
 }
 
+div.note {
+  margin: 1em 0;
+  padding: 1em;
+  background: var(--color-light);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 0px hsla(0, 0%, 0%, 0.1);
+}
+div.note-title {
+  font-size: 1.25em;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-light-gray);
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
+}
+div.note-title::before {
+  content: '\f0eb';
+  font-family: 'Font Awesome 5 Free';
+  padding: 0 0.5em;
+  color: var(--color-2);
+}
+
 /* Utilities */
 .bg-1 {
   background: var(--color-1);
@@ -186,4 +204,22 @@ code span.code-variable {
 }
 .bg-5 {
   background: var(--color-5);
+}
+
+@media screen and (max-width: 768px) {
+  section.container {
+    padding: 0 5%;
+  }
+  div.col-sm-12 {
+    width: calc(100% - 4em);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.col-md-6 {
+    width: calc(50% - 4em);
+  }
+  div.col-md-12 {
+    width: calc(100% - 4em);
+  }
 }

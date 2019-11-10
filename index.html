@@ -17,7 +17,7 @@
       <li class="brand"><h1>Git Good</h1></li>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#exercise">Exercise</a></li>
-      <li><a href="#far-far-away">Far, Far Away</a></li>
+      <li><a href="#more">More</a></li>
     </ul>
   </nav>
   <section id="overview" class="bg-4 container">
@@ -25,7 +25,7 @@
       <div class="col-12">
         <h2>Overview</h2>
       </div>
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <h3>What's git?</h3>
         <ul>
           <li>Version Control System (VCS)
@@ -70,7 +70,7 @@
           <li>A fork of <a href="https://github.com/rmlamarche/git-good" target="_blank">https://github.com/rmlamarche/git-good <i class="fas fa-external-link-alt"></i></a></li>
         </ol>
       </div>
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <h3>Terminology</h3>
         <dl>
           <dt>repository</dt>
@@ -101,23 +101,31 @@
         <h2>Exercise</h2>
         <h3>1. Cloning the Repository</h3>
         <div>
+          <p>This is the process of downloading your repository from GitHub to your computer.</p>
           <code class="code-inline code-bash">git clone https://github.com/rmlamarche/git-good.git</code>
         </div>
-        <img src="images/1.jpg" alt="GitHub Desktop - git clone" width="80%" height="auto" style="margin-bottom:1em;">
+        <img src="images/1.jpg" alt="GitHub Desktop - git clone" width="80%" height="auto" style="margin-bottom:2em;">
         <h3>2. Making Changes</h3>
         <div>
+          <p>Use your favorite code editor here (VSCode, Atom, vim, vi, nano, gedit, notepad, notepad++, ... the list goes on)</p>
           <code class="code-inline code-bash">echo "my name is <span class="code-variable">your_name</span>" >> README.txt</code>
         </div>
-        <img src="images/2.jpg" alt="Make changes" width="80%" height="auto" style="margin-bottom:1em;">
+        <img src="images/2.jpg" alt="Make changes" width="80%" height="auto" style="margin-bottom:2em;">
         <h3>3. "Saving" your changes</h3>
         <div>
+          <p>Here, you're telling git that you like these changes and you want to save them. You're creating a timestamp - a moment in history for your code.</p>
           <code class="code-inline code-bash">git commit -m "<span class="code-variable">commit_message</span>"</code>
         </div>
-        <img src="images/3.jpg" alt="GitHub Desktop - git commit" width="80%" height="auto" style="margin-bottom:1em;">
+        <img src="images/3.jpg" alt="GitHub Desktop - git commit" width="80%" height="auto" style="margin-bottom:2em;">
         <div>
+          <p>This is where you upload all of your commits to GitHub. You can commit multiple times before uploading them all.</p>
           <code class="code-inline code-bash">git push origin master</code>
         </div>
-        <img src="images/4.jpg" alt="GitHub Desktop - git push" width="80%" height="auto" style="margin-bottom:1em;">
+        <img src="images/4.jpg" alt="GitHub Desktop - git push" width="80%" height="auto" style="margin-bottom:2em;">
+        <div class="note" style="margin-bottom: 3em;">
+          <div class="note-title">Wait!</div>
+          <div class="note-message">Now head to GitHub and check out your changes. Make sure they're there!</div>
+        </div>
         <h3>4. Whoops</h3>
         <div>
           <p>You didn't mean to make those changes. Let's undo that!</p>
@@ -127,9 +135,12 @@
       </div>
     </div>
   </section>
-  <section id="far-far-away" class="bg-3 container">
+  <section id="more" class="bg-3 container">
     <div class="content-container">
-      <h2>Far, Far Away</h2>
+      <div class="col-12">
+        <h2>More</h2>
+        <p>There's a whole lot more where that came from. Read the docs.</p>
+      </div>
     </div>
   </section>
 </body>
