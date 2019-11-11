@@ -17,11 +17,11 @@ html, body {
   padding: 0;
   background: var(--color-light);
   width: 100%;
+  color: var(--color-black);
 }
 h1,h2,h3,h4,h5,h6,p {
   margin:0;
   padding:0;
-  color: var(--color-black);
 }
 a {
   color: var(--color-5);
@@ -205,7 +205,11 @@ div.note-title::before {
 .bg-5 {
   background: var(--color-5);
 }
+.text-light {
+  color: var(--color-light);
+}
 
+/* Media queries */
 @media screen and (max-width: 768px) {
   section.container {
     padding: 0 5%;
