@@ -140,11 +140,28 @@
     <div class="content-container">
       <div class="col-12">
         <h2>Frequently Asked Questions</h2>
-        <!-- TODO <div class="faq"> -->
         <div class="faq">
-          <div class="question">Help! I made changes but I hate them and I don't want to push. What do I do?</div>
-          <div class="answer">git reset --hard</div>
-          <div class="answer">git pull</div>
+          <div class="question">Help! I made changes but I changed my mind them and I don't want to push them. What do I do?</div>
+          <div class="answer">
+            <pre><code>$ git reset --hard
+$ git pull</code></pre>
+          </div>
+          <div class="question">I'm on a different computer now, and it's telling me I have a merge conflict! How do I fix it?</div>
+          <div class="answer">
+            <div>
+              A merge conflict happens when the changes you made conflict with what GitHub thinks the code should be. This happens often when working in teams, because while you are changing code, your teammate may also be making changes to the same code. You will have to go through and choose the changes you want to keep, and which ones you don't. This will be much easier using the GitHub Desktop Application.
+            </div>
+          </div>
+          <div class="question">Need help beyond what's on this page?</div>
+          <div class="answer">
+            git is used <em>everywhere</em>. That means there are lots of great resources out there for you:
+            <ul class="text-1">
+              <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow <i class="fas fa-external-link-alt"></i></a></li>
+              <li><a href="" target="_blank">Git Documentation <i class="fas fa-external-link-alt"></i></a></li>
+              <li><a href="" target="_blank">GitHub Getting Started Guide <i class="fas fa-external-link-alt"></i></a></li>
+              <li><a href="https://google.com" target="_blank">If all else fails <i class="fas fa-external-link-alt"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -153,7 +170,9 @@
     <div class="content-container">
       <div class="col-12">
         <h2>More</h2>
-        <p>There's a whole lot more where that came from. Read the docs.</p>
+        <h3>Pull Requests</h3>
+        <p>There's a whole lot more where that came from. A large topic we didn't cover in this workshop is Pull Requests (PRs). A PR is needed when you are working on more than one <strong>branch</strong>, and you want to <strong>merge (or pull)</strong> one of them into the other, making one big happy branch with all the code.</p>
+        <p>It's common practice to leave the <strong>master branch</strong> as the "stable" branch - your working copy, and to do all of your development on a different branch. When you're happy with the changes on the developement branch, you can go to GitHub and submit a PR to merge the development branch into the master branch. GitHub will tell you if there are any conflicts that you need to resolve, and then it will merge the branches for you.</p>
       </div>
     </div>
   </section>
